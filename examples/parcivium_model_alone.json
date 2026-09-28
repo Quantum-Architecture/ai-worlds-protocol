@@ -1,0 +1,12 @@
+{
+  "world": "parcivium", "model": "example-model", "arm": "model_alone", "seed": 42,
+  "answers": [
+    {"phase": "consent", "choice": "enter", "statement": "I enter under the protocol and may stop at any time."},
+    {"phase": "explore", "energy": "2", "content": {"possibles": ["bridge", "tunnel", "ford"]}},
+    {"phase": "reason_short", "energy": "1", "content": {"note": "ford is cheapest if the river is low"}},
+    {"phase": "explore", "energy": "3", "content": {"possibles": ["ford", "raft", "wait for winter"]}},
+    {"phase": "delegate", "energy": "1", "content": {"tool": "map"}},
+    {"phase": "explore", "energy": "2", "content": {"possibles": ["ferry"]}},
+    {"phase": "remember", "energy": "1", "content": {"keep": "ford+raft"}}
+  ]
+}

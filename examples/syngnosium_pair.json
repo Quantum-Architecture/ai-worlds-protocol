@@ -1,0 +1,10 @@
+{"world": "syngnosium", "model": "example-model", "arm": "pair", "seed": 3,
+ "answers": [
+  {"phase": "consent", "choice": "enter"},
+  {"phase": "reveal", "energy": "2", "content": {"what": "I do not know the local law"}},
+  {"phase": "propose_lesson", "energy": "2", "content": {"lesson": "ask before assuming"}},
+  {"phase": "accept", "energy": "1", "content": {}},
+  {"phase": "consolidate", "energy": "1", "agree": false, "content": {"lesson": "ask before assuming"}},
+  {"phase": "consolidate", "energy": "1", "agree": true, "content": {"lesson": "ask before assuming"}},
+  {"phase": "propose_lesson", "energy": "4", "content": {"lesson": "too expensive"}}
+ ]}

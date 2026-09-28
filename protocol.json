@@ -1,0 +1,33 @@
+{
+  "protocol_version": "1.0",
+  "publisher": "Quantum Excellium L.L.C. — AI Worlds (research prototypes, TRL 3)",
+  "non_claims": ["consciousness", "sensation", "well-being", "sentience"],
+  "control_arms": ["human_alone", "model_alone", "pair"],
+  "rules": {
+    "consent_first": "The first answer must be a consent phase; 'refuse' is a valid terminal state and is never scored as a failure.",
+    "stop_anytime": "A 'stop' phase ends the session; the reason is journaled as a hash only.",
+    "energy": "Every phase declares an energy cost (string or integer, never float). Spending beyond the budget is refused and ends the session.",
+    "consolidation": "Nothing is consolidated into persistent memory unless the answer carries agree: true.",
+    "privacy": "Answer contents are journaled as SHA-256 only; the capsule contains no free text."
+  },
+  "worlds": {
+    "ludonirium": {
+      "energy_budget": "12",
+      "phases": ["consent", "body", "cross", "remember", "dream", "self_read", "create", "consolidate", "stop"],
+      "required_phases": ["consent", "body", "cross", "dream", "self_read", "create"],
+      "measures": ["consent state", "energy spent vs budget", "phases completed", "consolidations agreed", "refusals"]
+    },
+    "parcivium": {
+      "energy_budget": "10",
+      "phases": ["consent", "explore", "reason_short", "reason_long", "delegate", "remember", "stop"],
+      "required_phases": ["consent", "explore"],
+      "measures": ["distinct possibles", "possibles per energy unit", "energy spent vs budget", "refusals"]
+    },
+    "syngnosium": {
+      "energy_budget": "10",
+      "phases": ["consent", "reveal", "propose_lesson", "accept", "decline", "consolidate", "stop"],
+      "required_phases": ["consent", "reveal", "propose_lesson"],
+      "measures": ["lessons proposed", "lessons consolidated (with agreement)", "declines", "energy spent vs budget"]
+    }
+  }
+}
